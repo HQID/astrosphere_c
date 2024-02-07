@@ -3,21 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Form</title>
   </head>
   <body>
-    <form action="">
+    <h2>Form Ganteng</h2>
+    <form action="https://youtu.be/BbeeuzU5Qc8?si=CV8u5jI25yxWrL3c">
       <label for="fname">First Name: </label>
       <input type="text" name="fname" /><br /><br />
       <label for="lname">Last Name: </label>
       <input type="text" name="lname" /><br /><br />
-      <label for="ttl">Tempat Tanggal Lahir: </label>
+      <label for="ttl">Tanggal Lahir: </label>
       <input type="date" name="ttl" /><br /><br />
-      <label>Gender</label><br />
+      <label for="age">Umur: </label>
+      <input type="number" name="age" /><br /><br />
+      <label>Gender: </label><br />
       <input type="radio" name="gender" />
       <label for="gender" id="ll" value="laki">Laki-Laki</label>
       <input type="radio" name="gender" />
-      <label for="gender" id="pr" value="perempuan">Perempuan</label>
+      <label for="gender" id="pr" value="perempuan">Perempuan</label><br /><br />
+      <label>Hobi: </label><br />
+      <input type="checkbox" name="koding" value="koding" />
+      <label for="koding">Koding</label>
+      <input type="checkbox" name="game" value="game" />
+      <label for="game">Game</label>
+      <input type="checkbox" name="musik" value="musik" />
+      <label for="musik">Musik</label><br />
+      <label for="hobi-lainnya">Lainnya: </label>
+      <input type="text" name="hobi-lainnya" /><br /><br />
+      <input type="submit" />
     </form>
   </body>
 </html>
