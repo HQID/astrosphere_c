@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: salmon;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 100px;
+  justify-content: space-between;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+a {
+  font-size: 1.5em;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+li {
+  font-size: 1.1em;
+  list-style: none;
+}
+
+.container {
+  width: 75%;
+  height: 500px;
+  margin: 50px;
+  background-color: aqua;
+  border: 3px dotted black;
+  padding: 10px;
+  overflow: scroll;
+}
