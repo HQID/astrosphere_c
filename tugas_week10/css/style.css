@@ -1,0 +1,254 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 20px 100px;
+  background-color: white;
+}
+
+.logo {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: rgb(222, 182, 132);
+  font-weight: bolder;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+}
+
+li {
+  color: #a6a6a6;
+  list-style: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+li:hover {
+  color: rgb(222, 182, 132);
+  transition: ease-in-out 200ms;
+  -webkit-transition: ease-in-out 200ms;
+  -moz-transition: ease-in-out 200ms;
+  -ms-transition: ease-in-out 200ms;
+  -o-transition: ease-in-out 200ms;
+}
+
+.contact {
+  width: 150px;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.166);
+  border: none;
+  font-size: 1em;
+  background-color: rgb(222, 182, 132);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: rgb(218, 171, 109);
+  color: #fafafa;
+  transition: ease-in-out 200ms;
+  -webkit-transition: ease-in-out 200ms;
+  -moz-transition: ease-in-out 200ms;
+  -ms-transition: ease-in-out 200ms;
+  -o-transition: ease-in-out 200ms;
+}
+
+.contact:active {
+  background-color: rgb(193, 147, 87);
+  color: #eaeaea;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 150px;
+  background-color: white;
+  margin-bottom: 60px;
+  height: 100%;
+}
+
+article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 85px;
+  font-size: 1.2em;
+}
+
+p {
+  font-weight: 100;
+}
+
+aside {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+
+span {
+  color: rgb(222, 182, 132);
+}
+
+.pesan {
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.9em;
+  background-color: rgb(222, 182, 132);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.166);
+}
+
+.pesan:hover {
+  background-color: rgb(218, 171, 109);
+  color: #fafafa;
+  transition: ease-in-out 200ms;
+  -webkit-transition: ease-in-out 200ms;
+  -moz-transition: ease-in-out 200ms;
+  -ms-transition: ease-in-out 200ms;
+  -o-transition: ease-in-out 200ms;
+}
+
+.pesan:active {
+  background-color: rgb(193, 147, 87);
+  color: #eaeaea;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 30px;
+  font-size: 0.9em;
+}
+
+footer div {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  cursor: pointer;
+  height: 100%;
+}
+
+@media screen and (max-width: 1076px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  aside {
+    order: -1;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+  main {
+    padding: 30px;
+    margin-bottom: 0;
+  }
+
+  aside img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 1.3em;
+  }
+
+  main {
+    padding: 75px 200px 75px 200px;
+  }
+
+  aside {
+    width: 50%;
+  }
+
+  article {
+    width: 50%;
+  }
+
+  aside img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .pesan {
+    width: 220px;
+    height: 70px;
+  }
+}
